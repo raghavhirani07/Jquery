@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the value of element </title>
+    <script src="jquery.js"></script>
+    <style>
+        #test{
+            background-color: pink;
+            border: 2px solid black;
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1> jquery Get Method </h1>
+<div id="test">
+    <h3> <span id="span"> is A box</span></h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officia neque consectetur, quisquam modi earum dolorem tenetur eligendi, aspernatur esse suscipit, quaerat possimus! Culpa sapiente, officiis ab perferendis impedit at.</p>
+    <button id="btn1"> Button 1</button>
+    <button id="btn2"> Button 2</button>
+    <button id="btn3"> Button 3</button>
+</div>
+<br><br>
+<script>
+$(document).ready(function(){
+
+// parentdants Method
+
+            // $('#span').parent().css('background-color','orange')
+            // $('#span').parents().css('background-color','red')
+            // $('#span').parents('#test').css('background-color','red')
+            //$('#btn1').parentsUntil('#test').css('background-color','red')
+            // $('#btn1').offsetParent().css('background-color','red')
+            // $('#btn1').closest('div').css('background-color','red')
+
+// Descendants method
+
+            //$('#test').children().css('background-color','red')   // only target their child not grand child
+            //$('#test').find('span').css('background-color','red')   // find the children or GrandChild
+            //$('#test').children().css('background-color','red')
+
+// Siblings method
+
+            // $('#btn1').siblings().css('background-color','red')
+            // $('#btn1').siblings('#btn2').css('background-color','red')
+            // $('#btn1').next().css('background-color','red')
+            // $('#btn1').nextAll().css('background-color','red')
+            // $('#btn1').prev().css('background-color','red')
+            // $('#btn1').prevAll().css('background-color','red')
+            // nextuntil and prevunit is a target the between two selector
+
+// Filtering Method
+
+            // $('button').first().css('background-color','red')
+            // $('#btn1').next().css('background-color','red')
+            // $('#btn1').nextAll().css('background-color','red')
+            // $('button').last().css('background-color','red')
+            // $('button').eq(2).css('background-color','red')
+            // $('button').filter('#btn1').css('background-color','red')
+            // $('button').not('#btn1').css('background-color','red')
+            $('button').slice(1,2).css('background-color','red')
+
+})
+</script>
+</body>
+</html>
