@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dignissimos vitae, pariatur laboriosam vel velit nemo, commodi perspiciatis ex molestiae sit! Quibusdam magnam vel asperiores, maiores incidunt eius suscipit quasi?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dignissimos vitae, pariatur laboriosam vel velit nemo, commodi perspiciatis ex molestiae sit! Quibusdam magnam vel asperiores, maiores incidunt eius suscipit quasi?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dignissimos vitae, pariatur laboriosam vel velit nemo, commodi perspiciatis ex molestiae sit! Quibusdam magnam vel asperiores, maiores incidunt eius suscipit quasi?</p>
+    </div>
+    <script>
+        $('p').each(function(e){
+            $(this).on('click',{value:e},function(event){
+                alert(event.data.value)
+            })
+        })
+    </script>
+</body>
+</html>
