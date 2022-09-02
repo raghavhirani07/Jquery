@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #test{
+            /* background-color: pink; */
+            border: 2px solid black;
+            width: 50%;
+            padding: 5px;
+        }
+        .one{
+            background-color: tan;
+        }
+        .second{
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> jquery Get Method </h1>
+    <div id="test">
+        <h3> This is A box</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officia neque consectetur, quisquam modi earum dolorem tenetur eligendi, aspernatur esse suscipit, quaerat possimus! Culpa sapiente, officiis ab perferendis impedit at.</p>
+    </div>
+    <button class="Editclass">Editclass</button>
+    <button class="Removeclass">Removeclass</button>
+    <button class="Toggleclass">Toggleclass</button>
+    <script>
+        $(document).ready(function(){
+            $('.Editclass').click(function(){
+                $('#test').addClass('one');
+            });
+            $('.Removeclass').click(function(){
+                $('#test').removeClass('one');
+            });
+            $('.Toggleclass').click(function(){
+                $('#test').toggleClass('one');
+            });
+
+
+
+
+        });
+    </script>
+</body>
+</html>
