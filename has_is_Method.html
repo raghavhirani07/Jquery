@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the value of element </title>
+    <script src="jquery.js"></script>
+    <style>
+        #test{
+            background-color: pink;
+            border: 2px solid black;
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1> jquery Get Method </h1>
+<div id="test">
+    <h3> <span class="span"> This is A box</span></h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officia neque consectetur, quisquam modi earum dolorem tenetur eligendi, aspernatur esse suscipit, quaerat possimus! Culpa sapiente, officiis ab perferendis impedit at.</p>
+    <button id="btn1"> Button 1</button>
+    <button id="btn2"> Button 2</button>
+</div>
+<br><br>
+<script>
+$(document).ready(function(){
+$('#btn1').click(function(){
+    $('h3').has('span').css('background-color','red')
+})
+$('#btn2').click(function(){
+    if($('#btn1').parent().is('div')){
+        console.log('hello');
+    }
+    else{
+        console.log('this is else')
+    }
+})
+})
+</script>
+</body>
+</html>
