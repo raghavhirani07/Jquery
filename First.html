@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 > Hello </h1>
+    <div id="test1" style="background-color:antiquewhite">
+        <h2> Test Box1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, incidunt.</p>
+    </div>
+    <div id="test2" style="background-color:azure ;">
+        <h2> Test Box2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, incidunt.</p>
+    </div>
+    <ul id="list">
+        <li class="class1">Orange</li>
+        <li class="test">Mango</li>
+        <li class="class3">Apple</li>
+        <li class="test">Graphes</li>
+        <li class="class5">Guvava</li>
+    </ul>
+<script>
+    $(document).ready(function(){
+           var v = $('#test1').html();
+            console.log(v);
+            var a = $('#test2').html();
+            console.log(a);
+        $("#list li").css("border","2px solid red");
+        $(".test").css("border","2px solid red");
+        $("*").css("border","2px solid red");
+        $("li:first-child").css("border","2px solid red");
+        $("ul li:eq(1)").css("border","2px solid red");
+
+
+
+
+
+    });
+</script>
+</body>
+</html>
