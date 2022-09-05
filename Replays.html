@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the value of element </title>
+    <script src="jquery.js"></script>
+    <style>
+        #test{
+            background-color: pink;
+            border: 2px solid black;
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1> jquery Get Method </h1>
+<div id="test">
+    <h3> This is A box</h3>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officia neque consectetur, quisquam modi earum dolorem tenetur eligendi, aspernatur esse suscipit, quaerat possimus! Culpa sapiente, officiis ab perferendis impedit at.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dignissimos voluptatem modi possimus nesciunt hic amet obcaecati facilis ab magnam voluptas dolor odit magni dolorem aut velit totam, molestias illo.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis unde hic repellat cupiditate ipsum quae tempora nemo nam, est iusto a ab beatae, nostrum ex iure labore reiciendis odit mollitia!</p>
+</div>
+<button id="replace">Replace</button>
+<script>
+$(document).ready(function(){
+
+    $('#replace').click(function(){
+        $('#test p:first').replaceWith($('#test h3').html());
+    })
+})
+</script>
+</body>
+</html>
