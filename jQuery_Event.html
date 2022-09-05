@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the value of element </title>
+    <script src="jquery.js"></script>
+    <style>
+        #test{
+            background-color: pink;
+            border: 2px solid black;
+            width: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1> jquery Get Method </h1>
+<div id="test">
+    <h3> This is A box</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officia neque consectetur, quisquam modi earum dolorem tenetur eligendi, aspernatur esse suscipit, quaerat possimus! Culpa sapiente, officiis ab perferendis impedit at.</p>
+    <input type="text" name="" id="input">
+    <button id="btn1"> Button 1</button>
+    <button id="btn2"> Button 2</button>
+</div>
+<br><br>
+<a href="www.google.com" id="a1"> Google 1</a>
+<a href="www.google.com" id="a2"> Google 2</a>
+<script>
+$(document).ready(function(){
+    // $(document).mousemove(function(e){
+    //     $('#test h3').text(" x: "+ e.pageX + " y: "+ e.pageY)
+    //     var x=e.pageX;
+    //     var y=e.pageY;
+    //     $('#btn1').offset({top:y,left:x})
+    // })
+
+    // $('#test').on("click dblclick mouseover mouseout",function(e){
+    //     $('#test h3').text("Event "+ e.type)
+    // })
+
+    // $(document).on('mouseover mouseout mousedown',function(e){
+    //     $("#test h3").text("Event"+e.which)
+    // })
+
+    // $('#input').on('keydown',function(e){
+    //     $('#test h3').text(e.type+" "+e.which)
+    // })
+
+    // $('#btn1').on('click ',function(){
+    //     $('#test h3').text(event.target.innerHTML)
+    // })
+
+    // $('#a1').click(function(event){
+    //     event.preventDefault(); //isdefa... is available for checking default
+    // })
+
+            // $('#test').click(function(){
+            //     alert('the Div Element was Click');
+            // })
+
+            // $('#test h3').click(function(e){
+            //     e.stopPropagation();
+            //     alert('the h3 Element was Click');
+            // })
+
+            // $('#test p').click(function(){
+            //     alert('the paragraph Element was Click');
+            // })
+
+})
+</script>
+</body>
+</html>
