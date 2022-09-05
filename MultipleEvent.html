@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the value of element </title>
+    <script src="jquery.js"></script>
+    <style>
+        #test{
+            /* background-color: pink; */
+            border: 2px solid black;
+            width: 50%;
+            padding: 5px;
+        }
+        .boxbg{
+            background-color: tan;
+        }
+    </style>
+</head>
+<body>
+<h1> jquery Get Method </h1>
+<div id="test">
+    <h3> This is A box</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officia neque consectetur, quisquam modi earum dolorem tenetur eligendi, aspernatur esse suscipit, quaerat possimus! Culpa sapiente, officiis ab perferendis impedit at.</p>
+</div>
+<script>
+    $(document).ready(function(){
+        // $('#test').on('click',function(){
+        //     $(this).css('background-color','tan');
+        // });
+        // $('#test').on('mouseover mouseout',function(){
+        //     $(this).toggleClass('boxbg');
+        // });
+        $('#test').on({
+            'click':function(){
+                $(this).css('background-color','orange');
+            },
+            'mouseover':function(){
+                $(this).css('background-color','blue');
+            },
+            'mouseout':function(){
+                $(this).css('background-color','tan');
+            }
+
+        })
+
+    });
+</script>
+</body>
+</html>
