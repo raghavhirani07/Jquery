@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .text{
+            width: 30%;
+            height: 100px;
+            background-color: pink;
+            overflow: auto;
+
+        }
+    </style>
+</head>
+<body>
+<h1>jquery Window Event</h1>
+<div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, exercitationem impedit minus voluptate praesentium totam accusamus perferendis sed iste explicabo doloremque qui vero quos porro nisi quo aliquam possimus reiciendis!Loremfa-rotate-180 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed accusamus praesentium incidunt necessitatibus tenetur, commodi veritatis itaque, porro esse cumque perferendis impedit harum mollitia laboriosam. Nemo voluptatum perspiciatis illum provident asperiores necessitatibus? Maxime, veniam minima. Sit dolorum distinctio dignissimos earum animi nostrum nemo, omnis, at quisquam aperiam reprehenderit, neque amet quibusdam. Ducimus quas incidunt deleniti dicta nam? Unde officia eaque iure numquam adipisci autem vel quidem magnam, debitis maxime excepturi fugiat sunt corporis, ad sed quam rerum cupiditate architecto animi? Voluptates commodi sapiente harum quibusdam dolores dolor exercitationem, consequuntur vero adipisci iusto doloremque nam ipsum et eveniet voluptatem sunt.
+</p></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, commodi!</p>
+<script>
+    $(document).ready(function(){
+        $('.text').scroll(function(){
+            console.log("you are scrolling ");
+        });
+        //load function remove because documnet.ready done by this
+
+
+
+
+
+    });
+</script>
+</body>
+</html>
